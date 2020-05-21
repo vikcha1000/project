@@ -33,11 +33,11 @@ async function getResponce() {
 
 
                 //выводим все данные photoes, который соответствуют albums
-                for (let index3 = 0; index3 < 5; index3++) {
+                for (let index3 = 0; index3 < content3.length; index3++) {
 
                     if (content3[index3].albumId == content2[index2].id) {
 
-                        myP.innerHTML += `<div class="photo_${index2} photo"><img src="images/star.png" class="star"><img src = "${content3[index3].thumbnailUrl}" data-src="${content3[index3].url}" class="image" title = "${content3[index3].title}"></div>`;
+                        myP.innerHTML += `<div class="photo_${index2} photo">gi class="star"><img src = "${content3[index3].thumbnailUrl}" data-src="${content3[index3].url}" class="image" title = "${content3[index3].title}"></div>`;
                     }
 
                 };
